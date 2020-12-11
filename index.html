@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catto</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            text-align: center;
+            font-family: cursive;
+            color: cornflowerblue;
+        }
+        p{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            color: maroon;
+        }
+        h3{
+            text-align: center;
+            color:violet;
+        }
+        .giphy-embed{
+            position: relative;
+            left: 380px;
+        }
+        .name{
+            color: crimson;
+            font-family: monospace;
+            font-size: 20px;
+            padding-bottom: 100px;   
+        }
+        button{
+            background-color: darkgreen;
+            color: white;
+        }
+        hr{
+            border: dotted;
+            border-radius: 5px;
+            border-color: pink;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 100px;
+        }
+        .last{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 50px;
+        }
+        .desc{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            color: darkslateblue;
+        }
+        .form{
+            text-align: center;
+        }
+        
+    </style>
+     <div>
+         
+           
+         <h1 class="user">Hello</h1> 
+         <script> 
+         var name=prompt("Enter your name");
+            var newname=name[0].toUpperCase()+name.slice(1);
+            document.querySelector(".user").innerHTML="Hello "+newname+" !";  
+            </script>
+        <h1>Welcome to Catto!</h1>
+        <p>Hey cat lovers all around the world!</p>
+        <p>We are inviting all cat lovers to share their story and pictures of their cats with us. Come on, join us!</p>
+        <h3>Your welcome gift!</h3>
+        <iframe src="https://giphy.com/embed/jRlP4zbERYW5HoCLvX" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jRlP4zbERYW5HoCLvX"></a></p>
+    <hr>
+    <div>
+        <h1>Let's read some hilarious cat stories!</h1>
+        <table cellspacing="20">
+            <tr>
+                <td><img src="images/eric-han-Hd7vwFzZpH0-unsplash.jpg"><p class="desc">I recently found out that my cat, Marv, hates it when I read aloud. He starts to look at me pleadingly, paces around, and meows insistently. He even climbs on top of the book and bites my wrists in protest.</p></td>
+                <td><img src="images/kote-puerto-so5nsYDOdxw-unsplash.jpg"><p class="desc">My cat knew how to press the release disc button on an Xbox. I would be playing and she would look dead into my eyes and press the button... It's like she knew I didn't save yet.</p></td>
+                <td><img class="last" src="images/milada-vigerova-7E9qvMOsZEM-unsplash.jpg"><p class="desc">My cat would get on the kitchen counter and eat the plastic wrap on the loaf bread. Just the plastic, not the actual bread.</p></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    </div>
+    <h1>Fill up this form to share your story with us!.</h1>
+    <form class="form" action="index.html" method="GET">
+        <label class="name" for="name">Name</label><br>
+        <input type="text" name="Name" placeholder="Enter your name"><br>
+        <label class="name" for="E-mail">Email</label><br>
+        <input class="Email" type="text" name="Email" placeholder="Enter your E-mail"><br>
+        <label  class="name" for="comment">Your story<br>
+        <textarea row="20" cols="20" name="Comment" placeholder="Enter your story"></textarea> <br>
+        <label class="name" for="file">Share your cat's photos</label><br>
+        <input type="file" for="photos"><br>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+    <hr>
+   
+   
+</body>
+</html>
